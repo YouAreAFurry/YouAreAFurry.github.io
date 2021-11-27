@@ -1,15 +1,6 @@
 /* [Oct 2021] Added to comply with strict browser policies. */
 // this is made by endermanch, not me. i just edited it to be more furry (hi adan)
 
-faudio.addEventListener('timeupdate', function() {
-	console.log('TimeUpdate invoked.');
-
-    if (this.currentTime > this.duration - .45) {
-        this.currentTime = 0;
-        this.play();
-    }
-}
-);
 /* [Oct 2021] End part. */
 
 function bookmark() {
